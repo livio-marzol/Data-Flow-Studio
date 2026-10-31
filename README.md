@@ -53,9 +53,3 @@ O **DataFlow Studio** é uma ferramenta interativa desenvolvida para simplificar
 Certifique-se de ter instalado em sua máquina:
 - [Node.js](https://nodejs.org/) (versão 18 ou superior)
 - Gerenciador de pacotes `npm`
-
-### Passo a Passo
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
