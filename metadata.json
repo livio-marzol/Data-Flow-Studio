@@ -1,0 +1,6 @@
+{
+  "name": "DataFlow Studio",
+  "description": "Editor visual de pipelines de dados com nós reativos, filtros, ordenação e visualização em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+/* Custom React Flow styling matching strict palette */
+.react-flow__background {
+  background-color: #020202 !important;
+}
+
+.react-flow__pane {
+  cursor: grab;
+}
+
+.react-flow__pane:active {
+  cursor: grabbing;
+}
+
+/* React Flow Controls dark styling */
+.react-flow__controls {
+  background-color: #19191a !important;
+  border: 1px solid #373739 !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-flow__controls-button {
+  background-color: #19191a !important;
+  border-bottom: 1px solid #373739 !important;
+  fill: #a0a0a0 !important;
+  color: #a0a0a0 !important;
+  transition: all 0.15s ease;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #262629 !important;
+  fill: #60d4ea !important;
+  color: #60d4ea !important;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor !important;
+}
+
+/* Handle animations and styling */
+.custom-handle {
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid #020202 !important;
+  background-color: #60d4ea !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.custom-handle:hover {
+  transform: scale(1.35) !important;
+  box-shadow: 0 0 8px #60d4ea;
+}
+
+/* Animated active edge */
+@keyframes dash-flow {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animated-active-edge {
+  stroke-dasharray: 6 3;
+  animation: dash-flow 1.2s linear infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #19191a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #373739;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #60d4ea;
+}
